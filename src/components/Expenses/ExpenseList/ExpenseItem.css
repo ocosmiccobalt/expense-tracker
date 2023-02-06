@@ -1,0 +1,57 @@
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 1rem 0;
+  padding: 0.5rem;
+
+  background-color: #4b4b4b;
+}
+
+.expense-item__description {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.expense-item__title {
+  flex: 1;
+
+  margin: 0 1rem;
+
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.expense-item__amount {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+
+  padding: 0.5rem;
+
+  border: 0.063rem solid #ffffff;
+  border-radius: 0.75rem;
+  background-color: #40005d;
+}
+
+@media (min-width: 36.25rem) {
+  .expense-item__description {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .expense-item__title {
+    font-size: 1.25rem;
+  }
+
+  .expense-item__amount {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
